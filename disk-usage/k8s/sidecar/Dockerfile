@@ -1,4 +1,4 @@
-FROM reg.whispir.cc/common/golang-images
+FROM flyingshit/golang:alpine
 
 ADD ./sidecar /app/
 
