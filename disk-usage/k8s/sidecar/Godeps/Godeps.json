@@ -1,0 +1,174 @@
+{
+	"ImportPath": "g.whispir.cc/common/disk-usage/k8s/sidecar",
+	"GoVersion": "go1.8",
+	"GodepVersion": "v79",
+	"Deps": [
+		{
+			"ImportPath": "g.whispir.cc/common/disk-usage/du",
+			"Rev": "f1ba9e317723dc0a844c85292ae0c724f745b7fe"
+		},
+		{
+			"ImportPath": "g.whispir.cc/common/disk-usage/env",
+			"Rev": "f1ba9e317723dc0a844c85292ae0c724f745b7fe"
+		},
+		{
+			"ImportPath": "g.whispir.cc/common/disk-usage/monitor",
+			"Rev": "f1ba9e317723dc0a844c85292ae0c724f745b7fe"
+		},
+		{
+			"ImportPath": "g.whispir.cc/common/disk-usage/types",
+			"Rev": "f1ba9e317723dc0a844c85292ae0c724f745b7fe"
+		},
+		{
+			"ImportPath": "g.whispir.cc/common/golog",
+			"Rev": "62a397c2290bb9852cbc813813e371b1507e4a90"
+		},
+		{
+			"ImportPath": "g.whispir.cc/whispircn/go-kit-common/encoding/http",
+			"Rev": "d2787bd1f6d2ce9252fce71ac2de1db536d3075c"
+		},
+		{
+			"ImportPath": "g.whispir.cc/whispircn/go-kit-common/errors/http",
+			"Rev": "d2787bd1f6d2ce9252fce71ac2de1db536d3075c"
+		},
+		{
+			"ImportPath": "g.whispir.cc/whispircn/go-kit-common/transport/http",
+			"Rev": "d2787bd1f6d2ce9252fce71ac2de1db536d3075c"
+		},
+		{
+			"ImportPath": "github.com/beorn7/perks/quantile",
+			"Rev": "4c0e84591b9aa9e6dcfdf3e020114cd81f89d5f9"
+		},
+		{
+			"ImportPath": "github.com/caarlos0/env",
+			"Comment": "v2.1-10-g7110c4e",
+			"Rev": "7110c4e2f569e729e19ad2d89fb3b5e3d159d8ca"
+		},
+		{
+			"ImportPath": "github.com/go-kit/kit/endpoint",
+			"Comment": "v0.4.0-24-g5d93a23",
+			"Rev": "5d93a23737003ed3ad90359f0aeb25e08dfdf547"
+		},
+		{
+			"ImportPath": "github.com/go-kit/kit/log",
+			"Comment": "v0.4.0-24-g5d93a23",
+			"Rev": "5d93a23737003ed3ad90359f0aeb25e08dfdf547"
+		},
+		{
+			"ImportPath": "github.com/go-kit/kit/transport/http",
+			"Comment": "v0.4.0-24-g5d93a23",
+			"Rev": "5d93a23737003ed3ad90359f0aeb25e08dfdf547"
+		},
+		{
+			"ImportPath": "github.com/go-logfmt/logfmt",
+			"Comment": "v0.3.0",
+			"Rev": "390ab7935ee28ec6b286364bba9b4dd6410cb3d5"
+		},
+		{
+			"ImportPath": "github.com/go-stack/stack",
+			"Comment": "v1.5.2",
+			"Rev": "100eb0c0a9c5b306ca2fb4f165df21d80ada4b82"
+		},
+		{
+			"ImportPath": "github.com/golang/protobuf/proto",
+			"Rev": "6e4cc92cc905d5f4a73041c1b8228ea08f4c6147"
+		},
+		{
+			"ImportPath": "github.com/gorilla/mux",
+			"Comment": "v1.3.0-5-g599cba5",
+			"Rev": "599cba5e7b6137d46ddf58fb1765f5d928e69604"
+		},
+		{
+			"ImportPath": "github.com/kr/logfmt",
+			"Rev": "b84e30acd515aadc4b783ad4ff83aff3299bdfe0"
+		},
+		{
+			"ImportPath": "github.com/matttproud/golang_protobuf_extensions/pbutil",
+			"Comment": "v1.0.0-2-gc12348c",
+			"Rev": "c12348ce28de40eed0136aa2b644d0ee0650e56c"
+		},
+		{
+			"ImportPath": "github.com/prometheus/client_golang/prometheus",
+			"Comment": "v0.8.0",
+			"Rev": "c5b7fccd204277076155f10851dad72b76a49317"
+		},
+		{
+			"ImportPath": "github.com/prometheus/client_golang/prometheus/promhttp",
+			"Comment": "v0.8.0",
+			"Rev": "c5b7fccd204277076155f10851dad72b76a49317"
+		},
+		{
+			"ImportPath": "github.com/prometheus/client_model/go",
+			"Comment": "model-0.0.2-14-g6f38060",
+			"Rev": "6f3806018612930941127f2a7c6c453ba2c527d2"
+		},
+		{
+			"ImportPath": "github.com/prometheus/common/expfmt",
+			"Rev": "2f17f4a9d485bf34b4bfaccc273805040e4f86c8"
+		},
+		{
+			"ImportPath": "github.com/prometheus/common/internal/bitbucket.org/ww/goautoneg",
+			"Rev": "2f17f4a9d485bf34b4bfaccc273805040e4f86c8"
+		},
+		{
+			"ImportPath": "github.com/prometheus/common/model",
+			"Rev": "2f17f4a9d485bf34b4bfaccc273805040e4f86c8"
+		},
+		{
+			"ImportPath": "github.com/prometheus/procfs",
+			"Rev": "e645f4e5aaa8506fc71d6edbc5c4ff02c04c46f2"
+		},
+		{
+			"ImportPath": "github.com/prometheus/procfs/xfs",
+			"Rev": "e645f4e5aaa8506fc71d6edbc5c4ff02c04c46f2"
+		},
+		{
+			"ImportPath": "go.uber.org/atomic",
+			"Comment": "v1.2.0-1-g1d7f075",
+			"Rev": "1d7f075bbe2659dfefbcb41e135048f29da50547"
+		},
+		{
+			"ImportPath": "go.uber.org/multierr",
+			"Comment": "v1.1.0",
+			"Rev": "3c4937480c32f4c13a875a1829af76c98ca3d40a"
+		},
+		{
+			"ImportPath": "go.uber.org/zap",
+			"Comment": "v1.5.0-6-g416e66a",
+			"Rev": "416e66ad83ebde35df0e09f02e65ac149e193b0e"
+		},
+		{
+			"ImportPath": "go.uber.org/zap/buffer",
+			"Comment": "v1.5.0-6-g416e66a",
+			"Rev": "416e66ad83ebde35df0e09f02e65ac149e193b0e"
+		},
+		{
+			"ImportPath": "go.uber.org/zap/internal/bufferpool",
+			"Comment": "v1.5.0-6-g416e66a",
+			"Rev": "416e66ad83ebde35df0e09f02e65ac149e193b0e"
+		},
+		{
+			"ImportPath": "go.uber.org/zap/internal/color",
+			"Comment": "v1.5.0-6-g416e66a",
+			"Rev": "416e66ad83ebde35df0e09f02e65ac149e193b0e"
+		},
+		{
+			"ImportPath": "go.uber.org/zap/internal/exit",
+			"Comment": "v1.5.0-6-g416e66a",
+			"Rev": "416e66ad83ebde35df0e09f02e65ac149e193b0e"
+		},
+		{
+			"ImportPath": "go.uber.org/zap/zapcore",
+			"Comment": "v1.5.0-6-g416e66a",
+			"Rev": "416e66ad83ebde35df0e09f02e65ac149e193b0e"
+		},
+		{
+			"ImportPath": "golang.org/x/net/context",
+			"Rev": "6c23252515492caf9b228a9d5cabcdbde29f7f82"
+		},
+		{
+			"ImportPath": "golang.org/x/net/context/ctxhttp",
+			"Rev": "6c23252515492caf9b228a9d5cabcdbde29f7f82"
+		}
+	]
+}
