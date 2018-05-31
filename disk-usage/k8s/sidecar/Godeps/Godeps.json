@@ -18,19 +18,19 @@
 		},
 		{
 			"ImportPath": "github.com/haborhuang/go-tools/disk-usage/du",
-			"Rev": "6003e90a9a8c13b68515ebebb2d779d16f0eec49"
+			"Rev": "27013885611f524a4cf2a3c4206c8eaa7d04c06c"
 		},
 		{
 			"ImportPath": "github.com/haborhuang/go-tools/disk-usage/env",
-			"Rev": "6003e90a9a8c13b68515ebebb2d779d16f0eec49"
+			"Rev": "27013885611f524a4cf2a3c4206c8eaa7d04c06c"
 		},
 		{
 			"ImportPath": "github.com/haborhuang/go-tools/disk-usage/monitor",
-			"Rev": "6003e90a9a8c13b68515ebebb2d779d16f0eec49"
+			"Rev": "27013885611f524a4cf2a3c4206c8eaa7d04c06c"
 		},
 		{
 			"ImportPath": "github.com/haborhuang/go-tools/disk-usage/types",
-			"Rev": "6003e90a9a8c13b68515ebebb2d779d16f0eec49"
+			"Rev": "27013885611f524a4cf2a3c4206c8eaa7d04c06c"
 		},
 		{
 			"ImportPath": "github.com/matttproud/golang_protobuf_extensions/pbutil",
