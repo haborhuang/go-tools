@@ -27,7 +27,7 @@ func ParseDisksPathsOrDie(defaultEnv string) types.DisksPaths {
 }
 
 type envMetricsConfig struct {
-	MetricsNS     string `env:"METRICS_NS" envDefault:"whispircn_v1"`
+	MetricsNS     string `env:"METRICS_NS" envDefault:"habor"`
 	MetricsSubSys string `env:"METRICS_SUBSYSTEM"`
 }
 
