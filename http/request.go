@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"io"
 	"io/ioutil"
+	"log"
 	"net/http"
 	"net/url"
 	"path"
 	"strings"
-	"log"
 )
 
 // Class for HTTP request
@@ -19,9 +19,9 @@ type HttpRequest struct {
 	err error
 
 	// URL info to where to send HTTP request
-	url     *url.URL
+	url *url.URL
 	// HTTP method
-	method  string
+	method string
 	// HTTP request headers
 	headers http.Header
 	// HTTP query parameters
@@ -29,7 +29,7 @@ type HttpRequest struct {
 	// HTTP request body
 	reqBody io.Reader
 	// HTTP response
-	resp    *http.Response
+	resp *http.Response
 	// Debug flag
 	debug bool
 }
@@ -37,7 +37,7 @@ type HttpRequest struct {
 // New HttpRequest object with specified URL
 func NewHttpReq(u url.URL) *HttpRequest {
 	return &HttpRequest{
-		url: &u,
+		url:     &u,
 		headers: make(http.Header),
 	}
 }
@@ -115,6 +115,42 @@ func (r *HttpRequest) AddHeader(k, v string) *HttpRequest {
 func (r *HttpRequest) Query(params url.Values) *HttpRequest {
 	if nil == r.err {
 		r.url.RawQuery = params.Encode()
+	}
+
+	return r
+}
+
+// AddQuery adds specified parameters into query
+func (r *HttpRequest) AddQuery(params url.Values) *HttpRequest {
+	if nil == r.err {
+		q := r.url.Query()
+		for k, vs := range params {
+			for _, v := range vs {
+				q.Add(k, v)
+			}
+		}
+		r.url.RawQuery = q.Encode()
+	}
+
+	return r
+}
+
+// SetQuery replaces specified parameters of query
+func (r *HttpRequest) SetQuery(params url.Values) *HttpRequest {
+	if nil == r.err {
+		q := r.url.Query()
+		for k, vs := range params {
+			for i, v := range vs {
+				if i == 0 {
+					q.Set(k, v)
+					continue
+				}
+
+				q.Add(k, v)
+			}
+		}
+
+		r.url.RawQuery = q.Encode()
 	}
 
 	return r
